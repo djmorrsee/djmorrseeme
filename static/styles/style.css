@@ -9,6 +9,11 @@
    Author's styles
    ---------------------------------------------------------*/
 
+.pure-g-r {
+	display:flex;
+	flex-flow:row wrap;
+}
+
 html, body {
 	font-family:sans-serif;
 	height: 100%;

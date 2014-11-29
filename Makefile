@@ -1,2 +1,2 @@
 clean:
-	rm -f *~
+	find -regex '.*~' -delete
