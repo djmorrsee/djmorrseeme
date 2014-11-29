@@ -13,4 +13,4 @@ def resume():
 	return app.send_static_file('pdf/Resume.pdf')
 
 if __name__ == '__main__':
-  app.run(port='80', host='0.0.0.0')
+  app.run(port=80, host='0.0.0.0')
