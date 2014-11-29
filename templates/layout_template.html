@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!---- Universal ---->
+	<meta charset="utf-8">
+	<title>Me, djmorrsee</title>
+
+	<!-- Define a viewport to mobile devices to use : sets initial zoom -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Page Description -->
+	<meta name="description" content="djmorrsee's playground of wonders">
+
+	<!---- Offsite Inclusions ---->
+	<!-- Done first for dependancy reasons -->
+
+	<!-- JQuery CDN -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Pure CSS CDN Links -->
+	<link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-min.css">
+
+	<!---- On Site Inclusions ---->
+	<!-- Site Stylesheet -->
+	<link href="{{ url_for('static', filename='styles/reset.css')}}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet">
+	
+	<!-- Page Script -->
+	<script src="{{ url_for('static', filename='js/home.js')}}"></script>
+	{% block js %}{% endblock %}
+
+	<!-- Page Style -->	
+	{% block style %}{%endblock %}
+
+	<title>{% block title %}Me, djmorrsee{% endblock %}</title>
+
+</head>
+<body>
+<div class="site-header" style="float:none;">
+
+		<a href="/"><div class="left"><h4>djmorrsee.me</h4></div></a>
+
+		<a href="/"><div class="right"><h3>About</h3></div></a>
+
+
+		<a href="/resume/"><div class="right"><h3>Resume</h3></div></a>
+
+
+		<a href="http://github.com/djmorrsee"><div class="right"><h3>GitHub</h3></div></a>
+
+</div>
+<div class="pure-g" style="height:95%;">
+	<div class="pure-u-1-8"></div>
+	<div class="main-body pure-u-3-4" align="center">
+		{% block main_body %}
+		{% endblock %}
+	</div>
+</div>
+</body>
+</html>

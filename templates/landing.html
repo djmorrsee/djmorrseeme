@@ -1,0 +1,18 @@
+{% extends 'layout_template.html' %}
+{% block js %}{% endblock %}
+{% block style %}<link href="{{ url_for('static', filename='styles/landing.css')}}" rel="stylesheet">{% endblock %}
+
+{% block main_body %}
+
+<div class="pure-g">
+	<div class="pure-u-3-5">
+		<h1 class="landing-title">Welcome to djmorrsee.me</h1>
+	</div>
+	<div class="pure-u-3-5">
+		<p class="landing-text">
+		The site is currently under construction, so check back soon!<br/>
+		For now you can view my <a href="/resume/">Resume</a> or my <a href="http://github.com/djmorrsee/">Github Page!</a>
+		</p>
+	</div>
+</div>
+{% endblock %}
