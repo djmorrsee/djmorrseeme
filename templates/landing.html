@@ -2,17 +2,23 @@
 {% block js %}{% endblock %}
 {% block style %}<link href="{{ url_for('static', filename='styles/landing.css')}}" rel="stylesheet">{% endblock %}
 
-{% block main_body %}
+{% block body_content %}
 
-<div class="pure-g">
-	<div class="pure-u-3-5">
-		<h1 class="landing-title">Welcome to djmorrsee.me</h1>
-	</div>
-	<div class="pure-u-3-5">
-		<p class="landing-text">
-		The site is currently under construction, so check back soon!<br/>
-		For now you can view my <a href="/resume/">Resume</a> or my <a href="http://github.com/djmorrsee/">Github Page!</a>
-		</p>
+<div class="body-div">
+	<div class="pure-g">
+		<div class="pure-u-1 pure-u-md-1-4 landing-left">
+		</div>
+		<div class="pure-u-1 pure-u-md-1-2 landing-center">
+			<div class="landing-title">
+				<h1>djmorrsee.me</h1>
+			</div>
+			<div class="landing-paragraph">
+				<p>Welcome! This site is currently under construction, check back soon!<br/>For now, please view my <a href="http://github.com/djmorrsee/">GitHub Page</a>, or perhaps my <a href="/resume/">resume!</a></p>
+			</div>
+		</div>
+		<div class="pure-u-1 pure-u-md-1-4 landing-right">
+		</div>
 	</div>
 </div>
+
 {% endblock %}

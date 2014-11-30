@@ -31,31 +31,24 @@
 	{% block js %}{% endblock %}
 
 	<!-- Page Style -->	
-	{% block style %}{%endblock %}
+	{% block style %}{% endblock %}
 
 	<title>{% block title %}Me, djmorrsee{% endblock %}</title>
 
 </head>
 <body>
-<div class="site-header" style="float:none;">
+<div class="site-header">
 
-		<a href="/"><div class="left"><h4>djmorrsee.me</h4></div></a>
-
-		<a href="/"><div class="right"><h3>About</h3></div></a>
-
-
-		<a href="/resume/"><div class="right"><h3>Resume</h3></div></a>
-
-
-		<a href="http://github.com/djmorrsee"><div class="right"><h3>GitHub</h3></div></a>
+	<div class="header-content">{% include 'header_content.html' %}</div>
 
 </div>
-<div class="pure-g" style="height:95%;">
-	<div class="pure-u-1-8"></div>
-	<div class="main-body pure-u-3-4" align="center">
-		{% block main_body %}
-		{% endblock %}
-	</div>
+<div class="site-body">
+	
+	<div class="body-content">{% block body_content %}{% endblock %}</div>
+	
 </div>
+
+
+
 </body>
 </html>

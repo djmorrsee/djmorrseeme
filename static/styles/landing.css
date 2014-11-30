@@ -2,12 +2,33 @@
 /* ---------------------------------------------------------
    Landing Page Styles
    ---------------------------------------------------------*/
+.body-div {
+}   
+
+.landing-left{
+	
+}
+
+.landing-center{
+}
+
+.landing-right{
+	
+}
+
 .landing-title {
-	font-size: 56px;
-	margin-top: 3em;
-	margin-bottom: 1em;
+	margin-top:10%;
+	font-size:5vw;
+	text-align:center;
 }
 
-.landing-text {
-
+.landing-paragraph {
+	font-size:2vw;
+	text-align:center;
 }
+
+
+.landing-title h1 {
+	padding: 2vw 0;
+}
+
