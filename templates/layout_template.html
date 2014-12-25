@@ -19,8 +19,8 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 	<!-- Pure CSS CDN Links -->
-	<link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.5.0/base-min.css&pure/0.5.0/grids-min.css&pure/0.5.0/grids-responsive-min.css">
-
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	
 	<!---- On Site Inclusions ---->
 	<!-- Site Stylesheet -->
 	<link href="{{ url_for('static', filename='styles/reset.css')}}" rel="stylesheet">
@@ -37,18 +37,8 @@
 
 </head>
 <body>
-<div class="site-header">
 
-	<div class="header-content">{% include 'header_content.html' %}</div>
-
-</div>
-<div class="site-body">
-	
-	<div class="body-content">{% block body_content %}{% endblock %}</div>
-	
-</div>
-
-
+{% block body_content %}{% endblock %}
 
 </body>
 </html>

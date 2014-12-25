@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from bin.loadstrings import load_strings
 
 # Setup App Server #
 
@@ -11,6 +12,14 @@ def home():
 @app.route('/resume/')
 def resume():
 	return app.send_static_file('pdf/Resume.pdf')
+    
+@app.route('/main_body.html')
+def main_body():
+    return render_template('main_body.html', strings=load_strings('landing'))
+
+@app.route('/header_content.html')
+def header_frame():
+    return render_template('header_content.html')
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0',port=80)
+  app.run(debug=True)

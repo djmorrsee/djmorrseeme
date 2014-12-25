@@ -1,0 +1,21 @@
+
+/* ---------------------------------------------------------
+   Header Bar Styles
+   ---------------------------------------------------------*/
+body, html {
+	height:100%;
+}
+.header-div {
+	height:100%;
+	background-color:#111;
+}
+.header-div ul li button {
+	width:100%;
+	height:100%;
+}
+.header-div ul li{
+	width:100%;
+	font-size:30px;
+	padding-bottom:0.25em;
+	text-align:center;
+}

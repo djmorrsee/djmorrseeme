@@ -10,56 +10,31 @@
    ---------------------------------------------------------*/
 
 html, body {
-	font-family:sans-serif;
-	height: 100%;
 	background-color:#221933;
 	color:#c3c3e5;
 }
 
 a:link, a:visited, a:hover, a:active {
 	color:rgb(98,98,114);
-}
-
-.site-header {
-	font-size:2vw;
-	background-color:#443266;
-	height:3vw;
-	width:100%;
-}
-
-.site-header div {
-	height:100%;
-}
-
-.site-header a:link, .site-header a:visited {
 	text-decoration:none;
-	color:#c3c3e5;
 }
-
-.header-div div {
-	background-color:#443266;
-	border-bottom:1px solid white;
-}
-
-.header-div p {
-	padding-top:.25em;
-	text-align:center;
-	height:100%;
-}
-
-.home-button {
-	font-size:100%;
-}
-
 
 .main-body {
 	background-color:#f1f0ff;
 	color:#221933;
-	height:100%;
 }
 
 .main-body a:link, .main-body a:visited, .main-body a:hover, .main-body a:active {
 	color:#540054;
+}
+
+.side-bar {
+	height:100vh;
+}
+
+iframe {
+	width:100%;
+	height:100%;
 }
 
 
