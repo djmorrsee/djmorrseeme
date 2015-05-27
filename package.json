@@ -1,0 +1,24 @@
+{
+  "name": "djmorrseeme",
+  "version": "0.0.1",
+  "description": "Personal web page of djmorrsee",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/djmorrsee/djmorrseeme.git"
+  },
+  "author": "Daniel Morrissey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djmorrsee/djmorrseeme/issues"
+  },
+  "homepage": "https://github.com/djmorrsee/djmorrseeme#readme",
+  "dependencies": {
+    "express": "^4.12.4",
+    "mustache-express": "^1.2.1",
+    "node-sass-middleware": "^0.8.0"
+  }
+}
